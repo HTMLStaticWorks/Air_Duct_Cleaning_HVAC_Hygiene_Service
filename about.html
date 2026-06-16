@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AeroPure - About Our Brand & Certifications</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+  
+  <!-- Tailwind CSS 3 CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              light: '#f0f9ff',
+              dark: '#0f172a',
+              primary: '#0284c7',
+              primaryHover: '#0369a1',
+              secondary: '#0d9488',
+              secondaryHover: '#0f766e',
+              accent: '#22c55e',
+              navy: '#1e3a8a',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            outfit: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="glass-nav fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-secondary flex items-center justify-center text-white shadow-md shadow-sky-500/20">
+            <i data-lucide="wind" class="w-6 h-6 animate-pulse"></i>
+          </div>
+          <span class="font-outfit text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+            Aero<span class="text-brand-primary">Pure</span>
+          </span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex items-center space-x-1 rtl:space-x-reverse">
+          <a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-sky-400 transition-colors">Home 1</a>
+          <a href="home2.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-sky-400 transition-colors">Home 2</a>
+          <a href="about.html" class="px-3 py-2 rounded-lg text-sm font-semibold transition-colors text-brand-primary dark:text-sky-400">About</a>
+          <a href="services.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-sky-400 transition-colors">Services</a>
+          <a href="gallery.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-sky-400 transition-colors">Gallery</a>
+          <a href="blog.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-sky-400 transition-colors">Blog</a>
+          <a href="contact.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-sky-400 transition-colors">Contact</a>
+        </div>
+
+        <!-- Desktop Utility Buttons -->
+        <div class="hidden lg:flex items-center space-x-4 rtl:space-x-reverse">
+          
+          <!-- RTL Toggle -->
+          <button class="rtl-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Direction">
+            <i data-lucide="languages" class="w-5 h-5"></i>
+          </button>
+          
+          <!-- Theme Toggle -->
+          <button class="theme-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Theme">
+            <i data-lucide="sun" class="sun-icon w-5 h-5 hidden"></i>
+            <i data-lucide="moon" class="moon-icon w-5 h-5"></i>
+          </button>
+
+          <a href="signup.html" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-primary to-brand-secondary text-white text-sm font-semibold hover:shadow-lg hover:shadow-sky-500/25 transition-all transform hover:-translate-y-0.5">Sign Up</a>
+        </div>
+
+        <!-- Mobile Navigation Menu Toggle Button -->
+        <div class="flex items-center space-x-3 lg:hidden rtl:space-x-reverse">
+          <!-- RTL Toggle for mobile -->
+          <button class="rtl-toggle w-9 h-9 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Direction">
+            <i data-lucide="languages" class="w-4 h-4"></i>
+          </button>
+
+          <!-- Theme Toggle for mobile -->
+          <button class="theme-toggle w-9 h-9 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Theme">
+            <i data-lucide="sun" class="sun-icon w-4 h-4 hidden"></i>
+            <i data-lucide="moon" class="moon-icon w-4 h-4"></i>
+          </button>
+
+          <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Open Menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Slide Down Menu -->
+    <div id="mobile-menu" class="hidden absolute top-20 left-0 right-0 glass-nav shadow-lg flex-col px-4 pt-4 pb-6 space-y-3 transition-all duration-300 transform opacity-0 -translate-y-4">
+      <a href="index.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home 1</a>
+      <a href="home2.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home 2</a>
+      <a href="about.html" class="px-3 py-2 rounded-lg text-base font-semibold text-brand-primary bg-sky-50/50 dark:bg-sky-950/20">About</a>
+      <a href="services.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Services</a>
+      <a href="gallery.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Gallery</a>
+      <a href="blog.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Blog</a>
+      <a href="contact.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Contact</a>
+      <div class="h-[1px] bg-slate-200 dark:bg-slate-800 my-2"></div>
+      <div class="flex flex-col space-y-2.5 pt-2">
+        <a href="signup.html" class="text-center px-4 py-2.5 rounded-xl bg-gradient-to-r from-brand-primary to-brand-secondary text-white text-sm font-semibold shadow-md shadow-sky-500/20">Sign Up</a>
+      </div>
+      <button id="mobile-menu-close" class="absolute top-2 right-4 text-slate-400 hover:text-slate-600 dark:hover:text-white">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="flex-grow pt-20">
+    
+    <!-- 1. Hero Section -->
+    <section class="relative py-20 md:py-28 overflow-hidden text-white bg-slate-950">
+      <!-- Full Cover Background Image -->
+      <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&q=80&w=1600" 
+           alt="AeroPure Headquarters Facility" 
+           class="absolute inset-0 w-full h-full object-cover opacity-35">
+      <!-- Gradient/Overlay to ensure readability -->
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-900/60 z-0"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4 relative z-10 animate-fade-in-up">
+        <span class="text-sky-300 font-semibold uppercase tracking-wider text-xs sm:text-sm">Who We Are</span>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-white leading-tight">
+          About AeroPure Hygiene Services
+        </h1>
+        <p class="text-slate-200 max-w-xl mx-auto text-xs sm:text-sm md:text-base font-normal leading-relaxed">
+          Learn about our mission, certifications, and our daily commitment to securing healthy indoor spaces.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. Company Story Section -->
+    <section class="py-16 bg-white dark:bg-slate-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Text story -->
+          <div class="lg:col-span-7 space-y-6 text-left rtl:text-right">
+            <span class="text-brand-secondary font-semibold uppercase tracking-wider text-sm">Founded in 2006</span>
+            <h2 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-900 dark:text-white leading-snug">
+              Providing Clean Indoor Air Quality Solutions for Over Two Decades
+            </h2>
+            <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+              AeroPure was established with a singular focus: to solve the commonly overlooked problem of contaminated indoor ventilation. Our founder, a mechanical engineer, discovered that many residential allergy complaints stemmed directly from uncleaned air ducts spreading pollen, dust, and pet dander.
+            </p>
+            <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+              Today, AeroPure has grown into a premier home hygiene service, executing over 15,000 project cleanings. We combine industrial-strength HEPA filtration with friendly local customer service to ensure you know exactly what is inside your vents.
+            </p>
+            
+            <!-- Value bullets -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 border-t border-slate-100 dark:border-slate-800">
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-base">Safety First</h4>
+                <p class="text-xs text-slate-400 mt-1 font-normal">We utilize only non-toxic, child-safe, and pet-friendly disinfectants.</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-base">Honest Pricing</h4>
+                <p class="text-xs text-slate-400 mt-1 font-normal">No hidden fees, bait-and-switch offers, or unexpected trip charges.</p>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 dark:text-white text-base">Clear Reports</h4>
+                <p class="text-xs text-slate-400 mt-1 font-normal">Every cleaning includes detailed optical before-and-after reports.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="lg:col-span-5 relative">
+            <div class="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-brand-primary to-brand-secondary opacity-10 blur-xl dark:opacity-20"></div>
+            <div class="relative glass-card p-3 rounded-3xl shadow-xl">
+              <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800" 
+                   alt="Friendly office customer service representatives" 
+                   class="rounded-2xl w-full h-[320px] object-cover">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Expertise & Certifications Section -->
+    <section class="py-16 bg-slate-50 dark:bg-slate-950 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <span class="text-brand-primary font-semibold uppercase tracking-wider text-sm">Our Credentials</span>
+          <h2 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-900 dark:text-white">
+            Industry Certifications & Professional Standards
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm font-normal">
+            We hold ourselves to the highest industry metrics, matching or exceeding federal environmental and mechanical safety guidelines.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Cert 1 -->
+          <div class="glass-card p-8 rounded-2xl border border-slate-100 dark:border-slate-800 flex items-start space-x-4 rtl:space-x-reverse">
+            <div class="p-3 bg-white dark:bg-slate-900 rounded-xl text-brand-primary shadow-sm flex-shrink-0">
+              <i data-lucide="award" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-1">NADCA Member</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+                National Air Duct Cleaners Association compliant. We follow strict procedural guidelines for structural duct sanitization.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="glass-card p-8 rounded-2xl border border-slate-100 dark:border-slate-800 flex items-start space-x-4 rtl:space-x-reverse">
+            <div class="p-3 bg-white dark:bg-slate-900 rounded-xl text-brand-secondary shadow-sm flex-shrink-0">
+              <i data-lucide="shield-check" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-1">OSHA Certified Crew</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+                Every field technician completes thorough OSHA safety training protocols, securing risk-free operations in all properties.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="glass-card p-8 rounded-2xl border border-slate-100 dark:border-slate-800 flex items-start space-x-4 rtl:space-x-reverse">
+            <div class="p-3 bg-white dark:bg-slate-900 rounded-xl text-emerald-500 shadow-sm flex-shrink-0">
+              <i data-lucide="shield" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-1">EPA Registered</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+                Our dynamic bio-sanitizers are EPA registered, certified safe to eliminate biological micro-organisms without chemical fumes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. Commitment to Healthy Homes Section -->
+    <section class="py-16 bg-white dark:bg-slate-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Image -->
+          <div class="lg:col-span-5 relative order-last lg:order-first">
+            <div class="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-brand-secondary to-brand-primary opacity-10 blur-xl dark:opacity-20"></div>
+            <div class="relative glass-card p-3 rounded-3xl shadow-xl">
+              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=800" 
+                   alt="Mother and child smiling at home" 
+                   class="rounded-2xl w-full h-[320px] object-cover">
+            </div>
+          </div>
+
+          <!-- Text content -->
+          <div class="lg:col-span-7 space-y-6 text-left rtl:text-right">
+            <span class="text-brand-secondary font-semibold uppercase tracking-wider text-sm">Healthy Living Spaces</span>
+            <h2 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-900 dark:text-white leading-snug">
+              Our Vision for Safe, Allergen-Free Residential Environments
+            </h2>
+            <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+              We understand that the safety of your family is paramount. Standard HVAC vents recirculate air multiple times daily, accumulating unseen irritants. If someone in your home experiences unexplained congestion, dry eyes, or frequent sneezing, dirty ducts are often the culprit.
+            </p>
+            <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+              Our residential hygiene programs focus on deep cleansing. We completely clear out structural trunk lines, sanitize coil assemblies, and install premium allergen filters, ensuring your family breathes air as nature intended.
+            </p>
+            
+            <div class="flex items-center space-x-4 rtl:space-x-reverse pt-2">
+              <a href="contact.html" class="px-6 py-3 rounded-xl bg-brand-primary hover:bg-brand-primaryHover text-white font-semibold shadow-md shadow-sky-500/20 transition-colors">
+                Book Family Package
+              </a>
+              <a href="services.html" class="px-6 py-3 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-200 font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                Explore Packages
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Eco-Efficiency & Health Pledge Section (Dark Mode Design) -->
+    <section class="py-16 bg-slate-900 dark:bg-slate-950 text-white relative overflow-hidden">
+      <!-- Decorative radial gradient bg -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Left Content -->
+          <div class="lg:col-span-7 space-y-6 text-left rtl:text-right">
+            <span class="text-brand-secondary font-semibold uppercase tracking-wider text-sm">Environmental Commitment</span>
+            <h2 class="text-2xl sm:text-3xl font-bold font-outfit text-white leading-snug">
+              Eco-Efficiency & Our Carbon Footprint Pledge
+            </h2>
+            <p class="text-sm text-slate-300 leading-relaxed font-normal">
+              At AeroPure, we recognize that healthy indoor air quality should not come at the expense of our planet. That is why we have pioneered energy-efficient cleaning protocols that help customers conserve power while securing sterile breathing air.
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+              <!-- Feature 1 -->
+              <div class="flex items-start space-x-3.5 rtl:space-x-reverse">
+                <div class="p-2.5 bg-slate-800 rounded-xl text-brand-secondary flex-shrink-0">
+                  <i data-lucide="leaf" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-white text-base">100% Botanical Disinfectants</h3>
+                  <p class="text-xs text-slate-400 mt-1 leading-relaxed">We exclusively utilize plant-derived, non-toxic bio-sanitizers (EPA-certified) that naturally degrade without releasing hazardous VOCs.</p>
+                </div>
+              </div>
+              
+              <!-- Feature 2 -->
+              <div class="flex items-start space-x-3.5 rtl:space-x-reverse">
+                <div class="p-2.5 bg-slate-800 rounded-xl text-brand-primary flex-shrink-0">
+                  <i data-lucide="zap" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-white text-base">Up to 21% HVAC Energy Savings</h3>
+                  <p class="text-xs text-slate-400 mt-1 leading-relaxed">Removing strictures from coils and ducts decreases mechanical resistance. Your blower motor works less, reducing monthly utility energy consumption.</p>
+                </div>
+              </div>
+
+              <!-- Feature 3 -->
+              <div class="flex items-start space-x-3.5 rtl:space-x-reverse">
+                <div class="p-2.5 bg-slate-800 rounded-xl text-amber-500 flex-shrink-0">
+                  <i data-lucide="recycle" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-white text-base">Particulate HEPA Containment</h3>
+                  <p class="text-xs text-slate-400 mt-1 leading-relaxed">Negative pressure agitation vacuum systems trap 99.97% of fine debris. We prevent dust and micro-allergens from leaking into the outside environment.</p>
+                </div>
+              </div>
+
+              <!-- Feature 4 -->
+              <div class="flex items-start space-x-3.5 rtl:space-x-reverse">
+                <div class="p-2.5 bg-slate-800 rounded-xl text-emerald-400 flex-shrink-0">
+                  <i data-lucide="shield-check" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-white text-base">Carbon Mitigation Audit</h3>
+                  <p class="text-xs text-slate-400 mt-1 leading-relaxed">Every commercial B2B cleaning project includes a carbon mitigation log estimating the reduction in heating and cooling energy usage.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Callout Box -->
+          <div class="lg:col-span-5 relative">
+            <div class="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-brand-primary to-brand-secondary opacity-15 blur-xl"></div>
+            <div class="relative glass-card p-8 rounded-3xl border border-slate-700 bg-slate-800/40 text-left rtl:text-right space-y-6">
+              <h3 class="text-xl font-bold font-outfit text-white">Our Sustainability Goal</h3>
+              <p class="text-xs text-slate-300 leading-relaxed font-normal">
+                By 2028, AeroPure aims to offset over 5,000 metric tons of greenhouse gas emissions across all corporate office and residential system cleaning contracts.
+              </p>
+              <div class="flex items-center space-x-4 rtl:space-x-reverse bg-slate-900/60 p-4 rounded-2xl border border-slate-700/50">
+                <div class="text-3xl font-extrabold text-brand-secondary">2.8M</div>
+                <div class="text-[11px] text-slate-400 font-semibold uppercase tracking-wider leading-snug">
+                  kWh Saved annually by our residential clients
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Team Section (White / Light Mode Design) -->
+    <section class="py-16 bg-white dark:bg-slate-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        
+        <div class="max-w-3xl mx-auto mb-16 space-y-4">
+          <span class="text-brand-primary font-semibold uppercase tracking-wider text-sm">Our Leadership</span>
+          <h2 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-900 dark:text-white">
+            Meet Our Air Hygiene Leaders
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm font-normal">
+            Behind our high customer satisfaction rating is a team of certified professionals committed to technical excellence.
+          </p>
+        </div>
+
+        <!-- Team Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Member 1 -->
+          <div class="flex flex-col bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-800 group">
+            <div class="overflow-hidden h-72 relative">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400" 
+                   alt="Marcus Vance" 
+                   class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-6 text-left rtl:text-right space-y-2">
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Marcus Vance</h3>
+              <p class="text-xs text-brand-primary font-semibold uppercase tracking-wider">Founder &amp; Lead Mechanical Engineer</p>
+              <p class="text-xs text-slate-500 dark:text-slate-400 font-normal leading-relaxed pt-1">
+                Marcus oversees operations and system audits. He specializes in building mechanical systems and airflow optimization.
+              </p>
+            </div>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="flex flex-col bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-800 group">
+            <div class="overflow-hidden h-72 relative">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400" 
+                   alt="Sarah Jenkins" 
+                   class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-6 text-left rtl:text-right space-y-2">
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">Sarah Jenkins</h3>
+              <p class="text-xs text-brand-secondary font-semibold uppercase tracking-wider">Chief Air Quality Consultant</p>
+              <p class="text-xs text-slate-500 dark:text-slate-400 font-normal leading-relaxed pt-1">
+                Sarah is a board-certified indoor environmentalist advising homeowners on microbial and allergen control strategies.
+              </p>
+            </div>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="flex flex-col bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-slate-100 dark:border-slate-800 group">
+            <div class="overflow-hidden h-72 relative">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400" 
+                   alt="David Cho" 
+                   class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-6 text-left rtl:text-right space-y-2">
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">David Cho</h3>
+              <p class="text-xs text-emerald-500 font-semibold uppercase tracking-wider">Director of Technical Operations</p>
+              <p class="text-xs text-slate-500 dark:text-slate-400 font-normal leading-relaxed pt-1">
+                David holds NADCA ASCS credentials and directs field tech training, safety compliances, and scheduling workflows.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-slate-900 text-slate-400 border-t border-slate-800 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
+        
+        <!-- Brand Info -->
+        <div class="md:col-span-4 space-y-4 text-left rtl:text-right">
+          <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-secondary flex items-center justify-center text-white">
+              <i data-lucide="wind" class="w-5 h-5"></i>
+            </div>
+            <span class="font-outfit text-xl font-bold tracking-tight text-white">
+              Aero<span class="text-brand-primary">Pure</span>
+            </span>
+          </a>
+          <p class="text-sm text-slate-400 leading-relaxed font-normal">
+            Certified residential and commercial air duct restoration specialists. Committed to improving your health and comfort through superior indoor air hygiene standards.
+          </p>
+          
+          <!-- Trust Certifications -->
+          <div class="flex items-center space-x-3 rtl:space-x-reverse pt-2">
+            <div class="px-2 py-1 rounded bg-slate-800 text-[10px] text-slate-200 font-bold border border-slate-700">NADCA MEMBER</div>
+            <div class="px-2 py-1 rounded bg-slate-800 text-[10px] text-slate-200 font-bold border border-slate-700">EPA REGISTERED</div>
+            <div class="px-2 py-1 rounded bg-slate-800 text-[10px] text-slate-200 font-bold border border-slate-700">IAQA MEMBER</div>
+          </div>
+        </div>
+
+        <!-- Services Links -->
+        <div class="md:col-span-2 space-y-4 text-left rtl:text-right">
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider">Services</h4>
+          <ul class="space-y-2.5 text-sm font-medium">
+            <li><a href="services.html" class="hover:text-brand-primary transition-colors">Duct Cleaning</a></li>
+            <li><a href="services.html" class="hover:text-brand-primary transition-colors">AC Coil Hygiene</a></li>
+            <li><a href="services.html" class="hover:text-brand-primary transition-colors">Dryer Vent Sweeping</a></li>
+            <li><a href="services.html" class="hover:text-brand-primary transition-colors">Sanitization</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources / Links -->
+        <div class="md:col-span-2 space-y-4 text-left rtl:text-right">
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider">Company</h4>
+          <ul class="space-y-2.5 text-sm font-medium">
+            <li><a href="about.html" class="hover:text-brand-primary transition-colors">Our Story</a></li>
+            <li><a href="gallery.html" class="hover:text-brand-primary transition-colors">Before & After</a></li>
+            <li><a href="blog.html" class="hover:text-brand-primary transition-colors">Air Quality Tips</a></li>
+            <li><a href="contact.html" class="hover:text-brand-primary transition-colors">Get B2B Quote</a></li>
+          </ul>
+        </div>
+
+        <!-- Contacts and Hours -->
+        <div class="md:col-span-4 space-y-4 text-left rtl:text-right">
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider font-outfit">Contact & Hours</h4>
+          <ul class="space-y-2.5 text-sm font-medium">
+            <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
+              <i data-lucide="phone" class="w-4 h-4 text-brand-primary flex-shrink-0"></i>
+              <span>+1 (800) 555-0199</span>
+            </li>
+            <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
+              <i data-lucide="mail" class="w-4 h-4 text-brand-primary flex-shrink-0"></i>
+              <span>support@aeropurehygiene.com</span>
+            </li>
+            <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
+              <i data-lucide="clock" class="w-4 h-4 text-brand-secondary flex-shrink-0"></i>
+              <span>Mon - Sat: 8:00 AM - 7:00 PM</span>
+            </li>
+          </ul>
+          <!-- Social Icons -->
+          <div class="flex items-center space-x-3 rtl:space-x-reverse pt-2">
+            <a href="#" class="w-9 h-9 flex items-center justify-center bg-slate-800 rounded-xl text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300" aria-label="Facebook">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="w-9 h-9 flex items-center justify-center bg-slate-800 rounded-xl text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300" aria-label="X (formerly Twitter)">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="w-9 h-9 flex items-center justify-center bg-slate-800 rounded-xl text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300" aria-label="LinkedIn">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#" class="w-9 h-9 flex items-center justify-center bg-slate-800 rounded-xl text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300" aria-label="Instagram">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright row -->
+      <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm font-medium">
+        <p>&copy; 2026 AeroPure Hygiene Services. All rights reserved.</p>
+        <div class="flex items-center space-x-4 rtl:space-x-reverse mt-4 sm:mt-0">
+          <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="main.js"></script>
+</body>
+</html>
