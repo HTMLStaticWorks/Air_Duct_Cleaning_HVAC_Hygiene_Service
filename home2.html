@@ -74,9 +74,8 @@
         <div class="hidden lg:flex items-center space-x-4 rtl:space-x-reverse">
           
           <!-- RTL Toggle -->
-          <button class="rtl-toggle px-3 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center space-x-2 rtl:space-x-reverse" aria-label="Toggle Direction">
-            <i data-lucide="languages" class="w-4 h-4"></i>
-            <span class="rtl-label text-xs font-bold tracking-wider">RTL</span>
+          <button class="rtl-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Direction">
+            <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
           </button>
           
           <!-- Theme Toggle -->
@@ -109,9 +108,8 @@
       <div class="h-[1px] bg-slate-200 dark:bg-slate-800 my-2"></div>
       <div class="flex items-center justify-between space-x-3 rtl:space-x-reverse pt-1 pb-2">
         <!-- Mobile RTL Toggle -->
-        <button class="rtl-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center space-x-2 rtl:space-x-reverse bg-white dark:bg-slate-900" aria-label="Toggle Direction">
-          <i data-lucide="languages" class="w-4 h-4"></i>
-          <span class="rtl-label text-xs font-bold tracking-wider">RTL</span>
+        <button class="rtl-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center bg-white dark:bg-slate-900" aria-label="Toggle Direction">
+          <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
         </button>
         <!-- Mobile Theme Toggle -->
         <button class="theme-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center space-x-2 bg-white dark:bg-slate-900" aria-label="Toggle Theme">
@@ -203,47 +201,55 @@
 
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
           <!-- Problem 1 -->
-          <div class="glass-card p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-md">
-            <div class="w-14 h-14 rounded-2xl overflow-hidden mb-6 shadow-sm">
-              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=200" alt="Dust & Fiber Clogs" class="w-full h-full object-cover">
+          <div class="glass-card rounded-2xl border border-slate-100 dark:border-slate-800 shadow-md overflow-hidden hover:-translate-y-1 transition-all duration-300">
+            <div class="w-full h-36 overflow-hidden shadow-sm">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600" alt="Dust & Fiber Clogs" class="w-full h-full object-cover">
             </div>
-            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Dust & Fiber Clogs</h3>
-            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
-              Fibrous lint and dander collect on filter tracks and fans, forcing motors to pull double electricity to heat/cool the room.
-            </p>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Dust & Fiber Clogs</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+                Fibrous lint and dander collect on filter tracks and fans, forcing motors to pull double electricity to heat/cool the room.
+              </p>
+            </div>
           </div>
 
           <!-- Problem 2 -->
-          <div class="glass-card p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-md">
-            <div class="w-14 h-14 rounded-2xl overflow-hidden mb-6 shadow-sm">
-              <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=200" alt="Mold & Spores" class="w-full h-full object-cover">
+          <div class="glass-card rounded-2xl border border-slate-100 dark:border-slate-800 shadow-md overflow-hidden hover:-translate-y-1 transition-all duration-300">
+            <div class="w-full h-36 overflow-hidden shadow-sm">
+              <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=600" alt="Mold & Spores" class="w-full h-full object-cover">
             </div>
-            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Mold & Spores</h3>
-            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
-              Cold air condensation creates damp surfaces in dark plenums, prompting microbial spore outbreaks that spread across office vents.
-            </p>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Mold & Spores</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+                Cold air condensation creates damp surfaces in dark plenums, prompting microbial spore outbreaks that spread across office vents.
+              </p>
+            </div>
           </div>
 
           <!-- Problem 3 -->
-          <div class="glass-card p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-md">
-            <div class="w-14 h-14 rounded-2xl overflow-hidden mb-6 shadow-sm">
-              <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=200" alt="Pet Dander & Fur" class="w-full h-full object-cover">
+          <div class="glass-card rounded-2xl border border-slate-100 dark:border-slate-800 shadow-md overflow-hidden hover:-translate-y-1 transition-all duration-300">
+            <div class="w-full h-36 overflow-hidden shadow-sm">
+              <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600" alt="Pet Dander & Fur" class="w-full h-full object-cover">
             </div>
-            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Pet Dander & Fur</h3>
-            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
-              Pet hair and airborne dander are pulled into return vents, recirculating allergens repeatedly through the internal air supply.
-            </p>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Pet Dander & Fur</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+                Pet hair and airborne dander are pulled into return vents, recirculating allergens repeatedly through the internal air supply.
+              </p>
+            </div>
           </div>
 
           <!-- Problem 4 -->
-          <div class="glass-card p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-md">
-            <div class="w-14 h-14 rounded-2xl overflow-hidden mb-6 shadow-sm">
-              <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&q=80&w=200" alt="Vent Blockages" class="w-full h-full object-cover">
+          <div class="glass-card rounded-2xl border border-slate-100 dark:border-slate-800 shadow-md overflow-hidden hover:-translate-y-1 transition-all duration-300">
+            <div class="w-full h-36 overflow-hidden shadow-sm">
+              <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&q=80&w=600" alt="Vent Blockages" class="w-full h-full object-cover">
             </div>
-            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Vent Blockages</h3>
-            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
-              Debris, loose sheet metal insulation, or pest nests block duct channels, causing system imbalances and uneven room temperatures.
-            </p>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Vent Blockages</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
+                Debris, loose sheet metal insulation, or pest nests block duct channels, causing system imbalances and uneven room temperatures.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -339,47 +345,55 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <!-- Card 1 -->
-          <div class="p-8 rounded-3xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-900 text-center space-y-4 hover:shadow-md transition-shadow">
-            <div class="mx-auto w-14 h-14 rounded-2xl overflow-hidden shadow-sm">
-              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=200" alt="Residential Homes" class="w-full h-full object-cover">
+          <div class="rounded-3xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-900 text-center overflow-hidden hover:shadow-md transition-shadow">
+            <div class="w-full h-40 overflow-hidden shadow-sm">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=600" alt="Residential Homes" class="w-full h-full object-cover">
             </div>
-            <h3 class="font-bold text-slate-900 dark:text-white text-lg">Residential Homes</h3>
-            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
-              Single family residences, townhouses, and private condos looking for improved indoor air cycles.
-            </p>
+            <div class="p-6 space-y-2">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg">Residential Homes</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
+                Single family residences, townhouses, and private condos looking for improved indoor air cycles.
+              </p>
+            </div>
           </div>
 
           <!-- Card 2 -->
-          <div class="p-8 rounded-3xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-900 text-center space-y-4 hover:shadow-md transition-shadow">
-            <div class="mx-auto w-14 h-14 rounded-2xl overflow-hidden shadow-sm">
-              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=200" alt="Commercial Offices" class="w-full h-full object-cover">
+          <div class="rounded-3xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-900 text-center overflow-hidden hover:shadow-md transition-shadow">
+            <div class="w-full h-40 overflow-hidden shadow-sm">
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=600" alt="Commercial Offices" class="w-full h-full object-cover">
             </div>
-            <h3 class="font-bold text-slate-900 dark:text-white text-lg">Commercial Offices</h3>
-            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
-              Corporate buildings, retail parks, and workspace compounds focused on employee comfort.
-            </p>
+            <div class="p-6 space-y-2">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg">Commercial Offices</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
+                Corporate buildings, retail parks, and workspace compounds focused on employee comfort.
+              </p>
+            </div>
           </div>
 
           <!-- Card 3 -->
-          <div class="p-8 rounded-3xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-900 text-center space-y-4 hover:shadow-md transition-shadow">
-            <div class="mx-auto w-14 h-14 rounded-2xl overflow-hidden shadow-sm">
-              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=200" alt="Apartments" class="w-full h-full object-cover">
+          <div class="rounded-3xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-900 text-center overflow-hidden hover:shadow-md transition-shadow">
+            <div class="w-full h-40 overflow-hidden shadow-sm">
+              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=600" alt="Apartments" class="w-full h-full object-cover">
             </div>
-            <h3 class="font-bold text-slate-900 dark:text-white text-lg">Apartments</h3>
-            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
-              Multi-family complexes, residential hotels, and student housing blocks requiring clean air lines.
-            </p>
+            <div class="p-6 space-y-2">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg">Apartments</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
+                Multi-family complexes, residential hotels, and student housing blocks requiring clean air lines.
+              </p>
+            </div>
           </div>
 
           <!-- Card 4 -->
-          <div class="p-8 rounded-3xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-900 text-center space-y-4 hover:shadow-md transition-shadow">
-            <div class="mx-auto w-14 h-14 rounded-2xl overflow-hidden shadow-sm">
-              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=200" alt="Property Managers" class="w-full h-full object-cover">
+          <div class="rounded-3xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-900 text-center overflow-hidden hover:shadow-md transition-shadow">
+            <div class="w-full h-40 overflow-hidden shadow-sm">
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=600" alt="Property Managers" class="w-full h-full object-cover">
             </div>
-            <h3 class="font-bold text-slate-900 dark:text-white text-lg">Property Managers</h3>
-            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
-              Partnerships for maintenance cycles, turnover duct flushing, and emergency filter management.
-            </p>
+            <div class="p-6 space-y-2">
+              <h3 class="font-bold text-slate-900 dark:text-white text-lg">Property Managers</h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
+                Partnerships for maintenance cycles, turnover duct flushing, and emergency filter management.
+              </p>
+            </div>
           </div>
         </div>
 

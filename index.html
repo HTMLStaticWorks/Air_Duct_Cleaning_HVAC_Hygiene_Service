@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
@@ -74,9 +74,8 @@
         <div class="hidden lg:flex items-center space-x-4 rtl:space-x-reverse">
           
           <!-- RTL Toggle -->
-          <button class="rtl-toggle px-3 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center space-x-2 rtl:space-x-reverse" aria-label="Toggle Direction">
-            <i data-lucide="languages" class="w-4 h-4"></i>
-            <span class="rtl-label text-xs font-bold tracking-wider">RTL</span>
+          <button class="rtl-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Direction">
+            <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
           </button>
           
           <!-- Theme Toggle -->
@@ -109,9 +108,8 @@
       <div class="h-[1px] bg-slate-200 dark:bg-slate-800 my-2"></div>
       <div class="flex items-center justify-between space-x-3 rtl:space-x-reverse pt-1 pb-2">
         <!-- Mobile RTL Toggle -->
-        <button class="rtl-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center space-x-2 rtl:space-x-reverse bg-white dark:bg-slate-900" aria-label="Toggle Direction">
-          <i data-lucide="languages" class="w-4 h-4"></i>
-          <span class="rtl-label text-xs font-bold tracking-wider">RTL</span>
+        <button class="rtl-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center bg-white dark:bg-slate-900" aria-label="Toggle Direction">
+          <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
         </button>
         <!-- Mobile Theme Toggle -->
         <button class="theme-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center space-x-2 bg-white dark:bg-slate-900" aria-label="Toggle Theme">
@@ -286,63 +284,71 @@
               </p>
             </div>
 
-            <div class="glass-card p-8 rounded-3xl shadow-xl border border-teal-100 dark:border-teal-950/50">
-              <div class="flex items-center space-x-4 rtl:space-x-reverse mb-4">
-                <div class="w-14 h-14 rounded-2xl overflow-hidden shadow-inner flex-shrink-0">
-                  <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=200" alt="Respiratory Relief" class="w-full h-full object-cover">
-                </div>
-                <h4 class="font-bold text-slate-950 dark:text-white text-lg">Respiratory Relief</h4>
+            <div class="glass-card rounded-3xl shadow-xl border border-teal-100 dark:border-teal-950/50 overflow-hidden">
+              <div class="w-full h-48 overflow-hidden shadow-inner">
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=600" alt="Respiratory Relief" class="w-full h-full object-cover">
               </div>
-              <p class="text-sm text-slate-500 dark:text-slate-400 font-normal">
-                Perfect for households with infants, elderly family members, or individuals dealing with asthma and seasonal allergies.
-              </p>
+              <div class="p-8">
+                <h4 class="font-bold text-slate-950 dark:text-white text-lg mb-2">Respiratory Relief</h4>
+                <p class="text-sm text-slate-500 dark:text-slate-400 font-normal">
+                  Perfect for households with infants, elderly family members, or individuals dealing with asthma and seasonal allergies.
+                </p>
+              </div>
             </div>
           </div>
 
           <!-- Right: Grid of 4 Health Benefit Cards -->
           <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
             <!-- Card 1 -->
-            <div class="glass-card p-6 rounded-2xl shadow-md border border-slate-100 dark:border-slate-800 hover:-translate-y-1 transition-all duration-300">
-              <div class="w-12 h-12 rounded-xl overflow-hidden mb-4 shadow-sm">
-                <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=200" alt="Relieve Allergy Symptoms" class="w-full h-full object-cover">
+            <div class="glass-card rounded-2xl shadow-md border border-slate-100 dark:border-slate-800 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+              <div class="w-full h-36 overflow-hidden shadow-sm">
+                <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=600" alt="Relieve Allergy Symptoms" class="w-full h-full object-cover">
               </div>
-              <h4 class="text-base font-bold text-slate-900 dark:text-white mb-2">Relieve Allergy Symptoms</h4>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
-                Reduces circulating triggers like pollen, dust mites, and pet dander from the ventilation cycles.
-              </p>
+              <div class="p-6">
+                <h4 class="text-base font-bold text-slate-900 dark:text-white mb-2">Relieve Allergy Symptoms</h4>
+                <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
+                  Reduces circulating triggers like pollen, dust mites, and pet dander from the ventilation cycles.
+                </p>
+              </div>
             </div>
             
             <!-- Card 2 -->
-            <div class="glass-card p-6 rounded-2xl shadow-md border border-slate-100 dark:border-slate-800 hover:-translate-y-1 transition-all duration-300">
-              <div class="w-12 h-12 rounded-xl overflow-hidden mb-4 shadow-sm">
-                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=200" alt="Lower Utility Bills" class="w-full h-full object-cover">
+            <div class="glass-card rounded-2xl shadow-md border border-slate-100 dark:border-slate-800 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+              <div class="w-full h-36 overflow-hidden shadow-sm">
+                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=600" alt="Lower Utility Bills" class="w-full h-full object-cover">
               </div>
-              <h4 class="text-base font-bold text-slate-900 dark:text-white mb-2">Lower Utility Bills</h4>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
-                Removing dust layers off fans and coils optimizes airflow, requiring less workload and electricity.
-              </p>
+              <div class="p-6">
+                <h4 class="text-base font-bold text-slate-900 dark:text-white mb-2">Lower Utility Bills</h4>
+                <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
+                  Removing dust layers off fans and coils optimizes airflow, requiring less workload and electricity.
+                </p>
+              </div>
             </div>
             
             <!-- Card 3 -->
-            <div class="glass-card p-6 rounded-2xl shadow-md border border-slate-100 dark:border-slate-800 hover:-translate-y-1 transition-all duration-300">
-              <div class="w-12 h-12 rounded-xl overflow-hidden mb-4 shadow-sm">
-                <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=200" alt="Odor Elimination" class="w-full h-full object-cover">
+            <div class="glass-card rounded-2xl shadow-md border border-slate-100 dark:border-slate-800 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+              <div class="w-full h-36 overflow-hidden shadow-sm">
+                <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=600" alt="Odor Elimination" class="w-full h-full object-cover">
               </div>
-              <h4 class="text-base font-bold text-slate-900 dark:text-white mb-2">Odor Elimination</h4>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
-                Removes stale odors from cooking, pets, and micro-mildew growing inside cold metal air plenums.
-              </p>
+              <div class="p-6">
+                <h4 class="text-base font-bold text-slate-900 dark:text-white mb-2">Odor Elimination</h4>
+                <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
+                  Removes stale odors from cooking, pets, and micro-mildew growing inside cold metal air plenums.
+                </p>
+              </div>
             </div>
             
             <!-- Card 4 -->
-            <div class="glass-card p-6 rounded-2xl shadow-md border border-slate-100 dark:border-slate-800 hover:-translate-y-1 transition-all duration-300">
-              <div class="w-12 h-12 rounded-xl overflow-hidden mb-4 shadow-sm">
-                <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&q=80&w=200" alt="Extend HVAC Lifespan" class="w-full h-full object-cover">
+            <div class="glass-card rounded-2xl shadow-md border border-slate-100 dark:border-slate-800 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+              <div class="w-full h-36 overflow-hidden shadow-sm">
+                <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&q=80&w=600" alt="Extend HVAC Lifespan" class="w-full h-full object-cover">
               </div>
-              <h4 class="text-base font-bold text-slate-900 dark:text-white mb-2">Extend HVAC Lifespan</h4>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
-                Prevent early mechanical failures caused by motor overheating and clogged internal filters.
-              </p>
+              <div class="p-6">
+                <h4 class="text-base font-bold text-slate-900 dark:text-white mb-2">Extend HVAC Lifespan</h4>
+                <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
+                  Prevent early mechanical failures caused by motor overheating and clogged internal filters.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -390,7 +396,7 @@
               </ul>
               <a href="services.html" class="inline-flex items-center text-sm font-semibold text-brand-primary hover:text-brand-primaryHover group/link">
                 <span>Configure Package</span>
-                <i data-lucide="arrow-right" class="w-4 h-4 ml-1.5 group-hover/link:translate-x-1 transition-transform rtl:rotate-180 rtl:mr-1.5 rtl:ml-0"></i>
+                <i data-lucide="arrow-right" class="w-4 h-4 ml-1.5 group-hover/link:translate-x-1 rtl:group-hover/link:-translate-x-1 transition-transform rtl:rotate-180 rtl:mr-1.5 rtl:ml-0"></i>
               </a>
             </div>
           </div>
@@ -416,7 +422,7 @@
               </ul>
               <a href="services.html" class="inline-flex items-center text-sm font-semibold text-brand-primary hover:text-brand-primaryHover group/link">
                 <span>Request B2B Quote</span>
-                <i data-lucide="arrow-right" class="w-4 h-4 ml-1.5 group-hover/link:translate-x-1 transition-transform rtl:rotate-180 rtl:mr-1.5 rtl:ml-0"></i>
+                <i data-lucide="arrow-right" class="w-4 h-4 ml-1.5 group-hover/link:translate-x-1 rtl:group-hover/link:-translate-x-1 transition-transform rtl:rotate-180 rtl:mr-1.5 rtl:ml-0"></i>
               </a>
             </div>
           </div>
@@ -442,7 +448,7 @@
               </ul>
               <a href="services.html" class="inline-flex items-center text-sm font-semibold text-brand-primary hover:text-brand-primaryHover group/link">
                 <span>View Details</span>
-                <i data-lucide="arrow-right" class="w-4 h-4 ml-1.5 group-hover/link:translate-x-1 transition-transform rtl:rotate-180 rtl:mr-1.5 rtl:ml-0"></i>
+                <i data-lucide="arrow-right" class="w-4 h-4 ml-1.5 group-hover/link:translate-x-1 rtl:group-hover/link:-translate-x-1 transition-transform rtl:rotate-180 rtl:mr-1.5 rtl:ml-0"></i>
               </a>
             </div>
           </div>
@@ -614,7 +620,7 @@
               <!-- Handle -->
               <div class="slider-handle absolute top-0 bottom-0 w-1 bg-brand-primary cursor-ew-resize flex items-center justify-center" style="left: 50%;">
                 <div class="w-9 h-9 rounded-full bg-brand-primary text-white flex items-center justify-center shadow-lg font-bold text-sm select-none border border-white hover:bg-brand-primaryHover transition-colors">
-                  ↔
+                  ?
                 </div>
               </div>
 

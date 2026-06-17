@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initBeforeAfterSliders();
   initCounters();
+  initBackToTop();
 });
 
 // --- Theme Toggle ---
@@ -83,20 +84,16 @@ function updateRTLButtons(dir) {
     }
   });
 
-  const rtlLabels = document.querySelectorAll('.rtl-label');
-  rtlLabels.forEach(label => {
-    // Show EN for RTL switch, show AR for LTR switch (Arabic / English demo toggle)
-    if (dir === 'rtl') {
-      label.textContent = 'LTR';
-      document.title = document.title.includes(' (RTL)') ? document.title : document.title + ' (RTL)';
-    } else {
-      label.textContent = 'RTL';
-      if (document.title.includes(' (RTL)')) {
-        document.title = document.title.replace(' (RTL)', '');
-      }
+  if (dir === 'rtl') {
+    document.title = document.title.includes(' (RTL)') ? document.title : document.title + ' (RTL)';
+  } else {
+    if (document.title.includes(' (RTL)')) {
+      document.title = document.title.replace(' (RTL)', '');
     }
-  });
+  }
 }
+
+
 
 // --- Mobile Hamburger Menu ---
 function initMobileMenu() {
@@ -196,4 +193,37 @@ function initCounters() {
   }, { threshold: 0.5 });
 
   counters.forEach(counter => observer.observe(counter));
+}
+
+// --- Back to Top Button ---
+function initBackToTop() {
+  const btn = document.createElement('button');
+  btn.id = 'back-to-top';
+  btn.className = 'fixed bottom-6 right-6 rtl:right-auto rtl:left-6 w-12 h-12 rounded-xl bg-brand-primary hover:bg-brand-primaryHover text-white flex items-center justify-center shadow-lg shadow-sky-500/20 hover:shadow-sky-500/35 transition-all duration-300 transform translate-y-10 opacity-0 pointer-events-none z-50';
+  btn.setAttribute('aria-label', 'Back to Top');
+  btn.innerHTML = '<i data-lucide="chevron-up" class="w-6 h-6"></i>';
+  
+  document.body.appendChild(btn);
+  
+  // Re-run lucide on the newly injected icon
+  if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+  }
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      btn.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
+      btn.classList.add('opacity-100', 'translate-y-0');
+    } else {
+      btn.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
+      btn.classList.remove('opacity-100', 'translate-y-0');
+    }
+  });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 }
