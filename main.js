@@ -88,7 +88,7 @@ function updateRTLButtons(dir) {
     // Show EN for RTL switch, show AR for LTR switch (Arabic / English demo toggle)
     if (dir === 'rtl') {
       label.textContent = 'LTR';
-      document.title = document.title.includes(' - RTL') ? document.title : document.title + ' (RTL)';
+      document.title = document.title.includes(' (RTL)') ? document.title : document.title + ' (RTL)';
     } else {
       label.textContent = 'RTL';
       if (document.title.includes(' (RTL)')) {

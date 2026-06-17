@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
@@ -74,8 +74,9 @@
         <div class="hidden lg:flex items-center space-x-4 rtl:space-x-reverse">
           
           <!-- RTL Toggle -->
-          <button class="rtl-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Direction">
-            <i data-lucide="languages" class="w-5 h-5"></i>
+          <button class="rtl-toggle px-3 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center space-x-2 rtl:space-x-reverse" aria-label="Toggle Direction">
+            <i data-lucide="languages" class="w-4 h-4"></i>
+            <span class="rtl-label text-xs font-bold tracking-wider">RTL</span>
           </button>
           
           <!-- Theme Toggle -->
@@ -89,17 +90,6 @@
 
         <!-- Mobile Navigation Menu Toggle Button -->
         <div class="flex items-center space-x-3 lg:hidden rtl:space-x-reverse">
-          <!-- RTL Toggle for mobile -->
-          <button class="rtl-toggle w-9 h-9 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Direction">
-            <i data-lucide="languages" class="w-4 h-4"></i>
-          </button>
-
-          <!-- Theme Toggle for mobile -->
-          <button class="theme-toggle w-9 h-9 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Theme">
-            <i data-lucide="sun" class="sun-icon w-4 h-4 hidden"></i>
-            <i data-lucide="moon" class="moon-icon w-4 h-4"></i>
-          </button>
-
           <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Open Menu">
             <i data-lucide="menu" class="w-6 h-6"></i>
           </button>
@@ -110,14 +100,28 @@
     <!-- Mobile Slide Down Menu -->
     <div id="mobile-menu" class="hidden absolute top-20 left-0 right-0 glass-nav shadow-lg flex-col px-4 pt-4 pb-6 space-y-3 transition-all duration-300 transform opacity-0 -translate-y-4">
       <a href="index.html" class="px-3 py-2 rounded-lg text-base font-semibold text-brand-primary bg-sky-50/50 dark:bg-sky-950/20">Home 1</a>
-      <a href="home2.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home 2</a>
-      <a href="about.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">About</a>
-      <a href="services.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Services</a>
-      <a href="gallery.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Gallery</a>
-      <a href="blog.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Blog</a>
-      <a href="contact.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Contact</a>
+      <a href="home2.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-650 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home 2</a>
+      <a href="about.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-650 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">About</a>
+      <a href="services.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-650 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Services</a>
+      <a href="gallery.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-650 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Gallery</a>
+      <a href="blog.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-650 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Blog</a>
+      <a href="contact.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-650 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Contact</a>
       <div class="h-[1px] bg-slate-200 dark:bg-slate-800 my-2"></div>
-      <div class="flex flex-col space-y-2.5 pt-2">
+      <div class="flex items-center justify-between space-x-3 rtl:space-x-reverse pt-1 pb-2">
+        <!-- Mobile RTL Toggle -->
+        <button class="rtl-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center space-x-2 rtl:space-x-reverse bg-white dark:bg-slate-900" aria-label="Toggle Direction">
+          <i data-lucide="languages" class="w-4 h-4"></i>
+          <span class="rtl-label text-xs font-bold tracking-wider">RTL</span>
+        </button>
+        <!-- Mobile Theme Toggle -->
+        <button class="theme-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center space-x-2 bg-white dark:bg-slate-900" aria-label="Toggle Theme">
+          <i data-lucide="sun" class="sun-icon w-4 h-4 hidden"></i>
+          <i data-lucide="moon" class="moon-icon w-4 h-4"></i>
+          <span class="text-xs font-bold tracking-wider dark:hidden">Dark Mode</span>
+          <span class="text-xs font-bold tracking-wider hidden dark:inline">Light Mode</span>
+        </button>
+      </div>
+      <div class="flex flex-col space-y-2.5">
         <a href="signup.html" class="text-center px-4 py-2.5 rounded-xl bg-gradient-to-r from-brand-primary to-brand-secondary text-white text-sm font-semibold shadow-md shadow-sky-500/20">Sign Up</a>
       </div>
       <button id="mobile-menu-close" class="absolute top-2 right-4 text-slate-400 hover:text-slate-600 dark:hover:text-white">
@@ -284,10 +288,10 @@
 
             <div class="glass-card p-8 rounded-3xl shadow-xl border border-teal-100 dark:border-teal-950/50">
               <div class="flex items-center space-x-4 rtl:space-x-reverse mb-4">
-                <div class="w-12 h-12 rounded-xl bg-teal-50 dark:bg-teal-950/30 flex items-center justify-center text-teal-600 dark:text-teal-400">
-                  <i data-lucide="activity" class="w-6 h-6"></i>
+                <div class="w-14 h-14 rounded-2xl overflow-hidden shadow-inner flex-shrink-0">
+                  <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=200" alt="Respiratory Relief" class="w-full h-full object-cover">
                 </div>
-                <h4 class="font-bold text-slate-950 dark:text-white">Respiratory Relief</h4>
+                <h4 class="font-bold text-slate-950 dark:text-white text-lg">Respiratory Relief</h4>
               </div>
               <p class="text-sm text-slate-500 dark:text-slate-400 font-normal">
                 Perfect for households with infants, elderly family members, or individuals dealing with asthma and seasonal allergies.
@@ -299,8 +303,8 @@
           <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
             <!-- Card 1 -->
             <div class="glass-card p-6 rounded-2xl shadow-md border border-slate-100 dark:border-slate-800 hover:-translate-y-1 transition-all duration-300">
-              <div class="w-10 h-10 rounded-lg bg-sky-50 dark:bg-sky-950/30 text-brand-primary flex items-center justify-center mb-4">
-                <i data-lucide="heart" class="w-5 h-5"></i>
+              <div class="w-12 h-12 rounded-xl overflow-hidden mb-4 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=200" alt="Relieve Allergy Symptoms" class="w-full h-full object-cover">
               </div>
               <h4 class="text-base font-bold text-slate-900 dark:text-white mb-2">Relieve Allergy Symptoms</h4>
               <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
@@ -310,8 +314,8 @@
             
             <!-- Card 2 -->
             <div class="glass-card p-6 rounded-2xl shadow-md border border-slate-100 dark:border-slate-800 hover:-translate-y-1 transition-all duration-300">
-              <div class="w-10 h-10 rounded-lg bg-teal-50 dark:bg-teal-950/30 text-brand-secondary flex items-center justify-center mb-4">
-                <i data-lucide="trending-down" class="w-5 h-5"></i>
+              <div class="w-12 h-12 rounded-xl overflow-hidden mb-4 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=200" alt="Lower Utility Bills" class="w-full h-full object-cover">
               </div>
               <h4 class="text-base font-bold text-slate-900 dark:text-white mb-2">Lower Utility Bills</h4>
               <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
@@ -321,8 +325,8 @@
             
             <!-- Card 3 -->
             <div class="glass-card p-6 rounded-2xl shadow-md border border-slate-100 dark:border-slate-800 hover:-translate-y-1 transition-all duration-300">
-              <div class="w-10 h-10 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 text-emerald-500 flex items-center justify-center mb-4">
-                <i data-lucide="wind" class="w-5 h-5"></i>
+              <div class="w-12 h-12 rounded-xl overflow-hidden mb-4 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=200" alt="Odor Elimination" class="w-full h-full object-cover">
               </div>
               <h4 class="text-base font-bold text-slate-900 dark:text-white mb-2">Odor Elimination</h4>
               <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
@@ -332,8 +336,8 @@
             
             <!-- Card 4 -->
             <div class="glass-card p-6 rounded-2xl shadow-md border border-slate-100 dark:border-slate-800 hover:-translate-y-1 transition-all duration-300">
-              <div class="w-10 h-10 rounded-lg bg-amber-50 dark:bg-amber-950/30 text-amber-500 flex items-center justify-center mb-4">
-                <i data-lucide="shield-alert" class="w-5 h-5"></i>
+              <div class="w-12 h-12 rounded-xl overflow-hidden mb-4 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&q=80&w=200" alt="Extend HVAC Lifespan" class="w-full h-full object-cover">
               </div>
               <h4 class="text-base font-bold text-slate-900 dark:text-white mb-2">Extend HVAC Lifespan</h4>
               <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal">
@@ -631,10 +635,10 @@
   <!-- ================= FOOTER ================= -->
   <footer class="bg-slate-900 text-slate-400 border-t border-slate-800 py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 mb-12">
         
         <!-- Brand Info -->
-        <div class="md:col-span-4 space-y-4 text-left rtl:text-right">
+        <div class="md:col-span-2 lg:col-span-4 space-y-4 text-left rtl:text-right">
           <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse">
             <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-secondary flex items-center justify-center text-white">
               <i data-lucide="wind" class="w-5 h-5"></i>
@@ -656,7 +660,7 @@
         </div>
 
         <!-- Services Links -->
-        <div class="md:col-span-2 space-y-4 text-left rtl:text-right">
+        <div class="md:col-span-1 lg:col-span-2 space-y-4 text-left rtl:text-right">
           <h4 class="text-white font-bold text-sm uppercase tracking-wider">Services</h4>
           <ul class="space-y-2.5 text-sm font-medium">
             <li><a href="services.html" class="hover:text-brand-primary transition-colors">Duct Cleaning</a></li>
@@ -667,7 +671,7 @@
         </div>
 
         <!-- Resources / Links -->
-        <div class="md:col-span-2 space-y-4 text-left rtl:text-right">
+        <div class="md:col-span-1 lg:col-span-2 space-y-4 text-left rtl:text-right">
           <h4 class="text-white font-bold text-sm uppercase tracking-wider">Company</h4>
           <ul class="space-y-2.5 text-sm font-medium">
             <li><a href="about.html" class="hover:text-brand-primary transition-colors">Our Story</a></li>
@@ -678,7 +682,7 @@
         </div>
 
         <!-- Contacts and Hours -->
-        <div class="md:col-span-4 space-y-4 text-left rtl:text-right">
+        <div class="md:col-span-2 lg:col-span-4 space-y-4 text-left rtl:text-right">
           <h4 class="text-white font-bold text-sm uppercase tracking-wider font-outfit">Contact & Hours</h4>
           <ul class="space-y-2.5 text-sm font-medium">
             <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
@@ -687,7 +691,7 @@
             </li>
             <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
               <i data-lucide="mail" class="w-4 h-4 text-brand-primary flex-shrink-0"></i>
-              <span>support@aeropurehygiene.com</span>
+              <span class="break-all">support@aeropurehygiene.com</span>
             </li>
             <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
               <i data-lucide="clock" class="w-4 h-4 text-brand-secondary flex-shrink-0"></i>
