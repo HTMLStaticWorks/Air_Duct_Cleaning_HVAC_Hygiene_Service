@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initBeforeAfterSliders();
   initCounters();
   initBackToTop();
+  initPasswordToggle();
 });
 
 // --- Theme Toggle ---
@@ -227,3 +228,32 @@ function initBackToTop() {
     });
   });
 }
+
+// --- Password Visibility Toggle ---
+function initPasswordToggle() {
+  const toggles = document.querySelectorAll('.password-toggle');
+  
+  toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const container = toggle.closest('.relative');
+      if (!container) return;
+      
+      const input = container.querySelector('input');
+      if (!input) return;
+      
+      const eyeIcon = toggle.querySelector('.toggle-icon-eye');
+      const eyeOffIcon = toggle.querySelector('.toggle-icon-eye-off');
+      
+      if (input.type === 'password') {
+        input.type = 'text';
+        if (eyeIcon) eyeIcon.classList.add('hidden');
+        if (eyeOffIcon) eyeOffIcon.classList.remove('hidden');
+      } else {
+        input.type = 'password';
+        if (eyeIcon) eyeIcon.classList.remove('hidden');
+        if (eyeOffIcon) eyeOffIcon.classList.add('hidden');
+      }
+    });
+  });
+}
+
