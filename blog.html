@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AeroPure - Air Quality & HVAC Maintenance Blog</title>
-  
+
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  
+
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="index.css">
-  
+
   <!-- Tailwind CSS 3 CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -38,20 +39,23 @@
       }
     }
   </script>
-  
+
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col">
+
+<body
+  class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col">
 
   <!-- ================= NAVBAR ================= -->
   <nav class="glass-nav fixed top-0 left-0 right-0 z-50 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
-        
+
         <!-- Logo -->
         <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse group">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-secondary flex items-center justify-center text-white shadow-md shadow-sky-500/20">
+          <div
+            class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-secondary flex items-center justify-center text-white shadow-md shadow-sky-500/20">
             <i data-lucide="wind" class="w-6 h-6 animate-pulse"></i>
           </div>
           <span class="font-outfit text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
@@ -61,35 +65,52 @@
 
         <!-- Desktop Menu -->
         <div class="hidden lg:flex items-center space-x-1 rtl:space-x-reverse">
-          <a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-sky-400 transition-colors">Home 1</a>
-          <a href="home2.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-sky-400 transition-colors">Home 2</a>
-          <a href="about.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-sky-400 transition-colors">About</a>
-          <a href="services.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-sky-400 transition-colors">Services</a>
-          <a href="gallery.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-sky-400 transition-colors">Gallery</a>
-          <a href="blog.html" class="px-3 py-2 rounded-lg text-sm font-semibold transition-colors text-brand-primary dark:text-sky-400">Blog</a>
-          <a href="contact.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-sky-400 transition-colors">Contact</a>
+          <a href="index.html"
+            class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-sky-400 transition-colors">Home
+            1</a>
+          <a href="home2.html"
+            class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-sky-400 transition-colors">Home
+            2</a>
+          <a href="about.html"
+            class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-sky-400 transition-colors">About</a>
+          <a href="services.html"
+            class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-sky-400 transition-colors">Services</a>
+          <a href="gallery.html"
+            class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-sky-400 transition-colors">Gallery</a>
+          <a href="blog.html"
+            class="px-3 py-2 rounded-lg text-sm font-semibold transition-colors text-brand-primary dark:text-sky-400">Blog</a>
+          <a href="contact.html"
+            class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-brand-primary dark:text-slate-300 dark:hover:text-sky-400 transition-colors">Contact</a>
         </div>
 
         <!-- Desktop Utility Buttons -->
         <div class="hidden lg:flex items-center space-x-4 rtl:space-x-reverse">
-          
+
           <!-- RTL Toggle -->
-          <button class="rtl-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Direction">
+          <button
+            class="rtl-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center"
+            aria-label="Toggle Direction">
             <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
           </button>
-          
+
           <!-- Theme Toggle -->
-          <button class="theme-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center" aria-label="Toggle Theme">
+          <button
+            class="theme-toggle w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center"
+            aria-label="Toggle Theme">
             <i data-lucide="sun" class="sun-icon w-5 h-5 hidden"></i>
             <i data-lucide="moon" class="moon-icon w-5 h-5"></i>
           </button>
 
-          <a href="signup.html" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-primary to-brand-secondary text-white text-sm font-semibold hover:shadow-lg hover:shadow-sky-500/25 transition-all transform hover:-translate-y-0.5">Sign Up</a>
+          <a href="signup.html"
+            class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-primary to-brand-secondary text-white text-sm font-semibold hover:shadow-lg hover:shadow-sky-500/25 transition-all transform hover:-translate-y-0.5">Sign
+            Up</a>
         </div>
 
         <!-- Mobile Navigation Menu Toggle Button -->
         <div class="flex items-center space-x-3 lg:hidden rtl:space-x-reverse">
-          <button id="mobile-menu-btn" class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Open Menu">
+          <button id="mobile-menu-btn"
+            class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+            aria-label="Open Menu">
             <i data-lucide="menu" class="w-6 h-6"></i>
           </button>
         </div>
@@ -97,22 +118,36 @@
     </div>
 
     <!-- Mobile Slide Down Menu -->
-    <div id="mobile-menu" class="hidden absolute top-20 left-0 right-0 glass-nav shadow-lg flex-col px-4 pt-4 pb-6 space-y-3 transition-all duration-300 transform opacity-0 -translate-y-4">
-      <a href="index.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-650 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home 1</a>
-      <a href="home2.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home 2</a>
-      <a href="about.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">About</a>
-      <a href="services.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Services</a>
-      <a href="gallery.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Gallery</a>
-      <a href="blog.html" class="px-3 py-2 rounded-lg text-base font-semibold text-brand-primary bg-sky-50/50 dark:bg-sky-950/20">Blog</a>
-      <a href="contact.html" class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Contact</a>
+    <div id="mobile-menu"
+      class="hidden absolute top-20 left-0 right-0 glass-nav shadow-lg flex-col px-4 pt-4 pb-6 space-y-3 transition-all duration-300 transform opacity-0 -translate-y-4">
+      <a href="index.html"
+        class="px-3 py-2 rounded-lg text-base font-medium text-slate-650 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home
+        1</a>
+      <a href="home2.html"
+        class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Home
+        2</a>
+      <a href="about.html"
+        class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">About</a>
+      <a href="services.html"
+        class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Services</a>
+      <a href="gallery.html"
+        class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Gallery</a>
+      <a href="blog.html"
+        class="px-3 py-2 rounded-lg text-base font-semibold text-brand-primary bg-sky-50/50 dark:bg-sky-950/20">Blog</a>
+      <a href="contact.html"
+        class="px-3 py-2 rounded-lg text-base font-medium text-slate-655 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800">Contact</a>
       <div class="h-[1px] bg-slate-200 dark:bg-slate-800 my-2"></div>
       <div class="flex items-center justify-between space-x-3 rtl:space-x-reverse pt-1 pb-2">
         <!-- Mobile RTL Toggle -->
-        <button class="rtl-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center bg-white dark:bg-slate-900" aria-label="Toggle Direction">
+        <button
+          class="rtl-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center bg-white dark:bg-slate-900"
+          aria-label="Toggle Direction">
           <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
         </button>
         <!-- Mobile Theme Toggle -->
-        <button class="theme-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-655 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center space-x-2 bg-white dark:bg-slate-900" aria-label="Toggle Theme">
+        <button
+          class="theme-toggle flex-1 h-10 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-655 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center space-x-2 bg-white dark:bg-slate-900"
+          aria-label="Toggle Theme">
           <i data-lucide="sun" class="sun-icon w-4 h-4 hidden"></i>
           <i data-lucide="moon" class="moon-icon w-4 h-4"></i>
           <span class="text-xs font-bold tracking-wider dark:hidden">Dark Mode</span>
@@ -120,9 +155,12 @@
         </button>
       </div>
       <div class="flex flex-col space-y-2.5">
-        <a href="signup.html" class="text-center px-4 py-2.5 rounded-xl bg-gradient-to-r from-brand-primary to-brand-secondary text-white text-sm font-semibold shadow-md shadow-sky-500/20">Sign Up</a>
+        <a href="signup.html"
+          class="text-center px-4 py-2.5 rounded-xl bg-gradient-to-r from-brand-primary to-brand-secondary text-white text-sm font-semibold shadow-md shadow-sky-500/20">Sign
+          Up</a>
       </div>
-      <button id="mobile-menu-close" class="absolute top-2 right-4 text-slate-400 hover:text-slate-600 dark:hover:text-white">
+      <button id="mobile-menu-close"
+        class="absolute top-2 right-4 text-slate-400 hover:text-slate-600 dark:hover:text-white">
         <i data-lucide="x" class="w-5 h-5"></i>
       </button>
     </div>
@@ -130,16 +168,15 @@
 
   <!-- ================= MAIN CONTENT ================= -->
   <main class="flex-grow pt-20">
-    
+
     <!-- 1. Hero Section -->
     <section class="relative py-20 md:py-28 overflow-hidden text-white bg-slate-950">
       <!-- Full Cover Background Image -->
-      <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&q=80&w=1600" 
-           alt="Healthy Cozy Home Air Quality" 
-           class="absolute inset-0 w-full h-full object-cover opacity-35">
+      <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&q=80&w=1600"
+        alt="Healthy Cozy Home Air Quality" class="absolute inset-0 w-full h-full object-cover opacity-35">
       <!-- Gradient/Overlay to ensure readability -->
       <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/75 to-slate-900/60 z-0"></div>
-      
+
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4 relative z-10 animate-fade-in-up">
         <span class="text-sky-300 font-semibold uppercase tracking-wider text-xs sm:text-sm">Expert Resources</span>
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-white leading-tight">
@@ -154,83 +191,104 @@
     <!-- 2. Featured Articles Grid -->
     <section class="py-16 bg-white dark:bg-slate-900">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
+
           <!-- Post 1 -->
-          <article class="flex flex-col bg-slate-50 dark:bg-slate-950 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all border border-slate-100 dark:border-slate-900 group">
+          <article
+            class="flex flex-col bg-slate-50 dark:bg-slate-950 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all border border-slate-100 dark:border-slate-900 group">
             <div class="h-48 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600" 
-                   alt="Close up vent visual" 
-                   class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600"
+                alt="Close up vent visual"
+                class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300">
             </div>
             <div class="p-6 flex flex-col flex-grow text-left ltr:text-left rtl:text-right">
-              <div class="flex items-center space-x-2.5 rtl:space-x-reverse text-xs font-semibold text-brand-primary mb-3">
+              <div
+                class="flex items-center space-x-2.5 rtl:space-x-reverse text-xs font-semibold text-brand-primary mb-3">
                 <span>HOME HEALTH</span>
-                <span>•</span>
+                <span>â€¢</span>
                 <span>5 Min Read</span>
               </div>
-              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2 group-hover:text-brand-primary transition-colors">
+              <h3
+                class="font-bold text-slate-900 dark:text-white text-lg mb-2 group-hover:text-brand-primary transition-colors">
                 5 Signs Your Home Air Vents Need Urgent Cleaning
               </h3>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed flex-grow mb-6">
-                From caked dust on register grilles to unexplained morning congestion, learn how to audit your ventilation pipes.
+              <p
+                class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed flex-grow mb-6">
+                From caked dust on register grilles to unexplained morning congestion, learn how to audit your
+                ventilation pipes.
               </p>
-              <a href="#" class="inline-flex items-center text-xs font-bold text-brand-primary uppercase tracking-wider group-hover:text-brand-primaryHover">
+              <a href="#"
+                class="inline-flex items-center text-xs font-bold text-brand-primary uppercase tracking-wider group-hover:text-brand-primaryHover">
                 <span>Read Article</span>
-                <i data-lucide="arrow-right" class="w-4 h-4 ml-1 group-hover/link:translate-x-1 rtl:group-hover/link:-translate-x-1 transition-transform rtl:rotate-180 rtl:mr-1 rtl:ml-0"></i>
+                <i data-lucide="arrow-right"
+                  class="w-4 h-4 ml-1 group-hover/link:translate-x-1 rtl:group-hover/link:-translate-x-1 transition-transform rtl:rotate-180 rtl:mr-1 rtl:ml-0"></i>
               </a>
             </div>
           </article>
 
           <!-- Post 2 -->
-          <article class="flex flex-col bg-slate-50 dark:bg-slate-950 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all border border-slate-100 dark:border-slate-900 group">
+          <article
+            class="flex flex-col bg-slate-50 dark:bg-slate-950 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all border border-slate-100 dark:border-slate-900 group">
             <div class="h-48 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&q=80&w=600" 
-                   alt="Modern energy thermostat" 
-                   class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300">
+              <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&q=80&w=600"
+                alt="Modern energy thermostat"
+                class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300">
             </div>
             <div class="p-6 flex flex-col flex-grow text-left ltr:text-left rtl:text-right">
-              <div class="flex items-center space-x-2.5 rtl:space-x-reverse text-xs font-semibold text-brand-secondary mb-3">
+              <div
+                class="flex items-center space-x-2.5 rtl:space-x-reverse text-xs font-semibold text-brand-secondary mb-3">
                 <span>ENERGY SAVINGS</span>
-                <span>•</span>
+                <span>â€¢</span>
                 <span>7 Min Read</span>
               </div>
-              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2 group-hover:text-brand-primary transition-colors">
+              <h3
+                class="font-bold text-slate-900 dark:text-white text-lg mb-2 group-hover:text-brand-primary transition-colors">
                 How Duct Sanitation Lowers Cooling Bills By 15%
               </h3>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed flex-grow mb-6">
-                Removing structural dust layers from blower motors and coils optimizes air flow speeds, saving massive electricity load.
+              <p
+                class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed flex-grow mb-6">
+                Removing structural dust layers from blower motors and coils optimizes air flow speeds, saving massive
+                electricity load.
               </p>
-              <a href="#" class="inline-flex items-center text-xs font-bold text-brand-primary uppercase tracking-wider group-hover:text-brand-primaryHover">
+              <a href="#"
+                class="inline-flex items-center text-xs font-bold text-brand-primary uppercase tracking-wider group-hover:text-brand-primaryHover">
                 <span>Read Article</span>
-                <i data-lucide="arrow-right" class="w-4 h-4 ml-1 group-hover/link:translate-x-1 rtl:group-hover/link:-translate-x-1 transition-transform rtl:rotate-180 rtl:mr-1 rtl:ml-0"></i>
+                <i data-lucide="arrow-right"
+                  class="w-4 h-4 ml-1 group-hover/link:translate-x-1 rtl:group-hover/link:-translate-x-1 transition-transform rtl:rotate-180 rtl:mr-1 rtl:ml-0"></i>
               </a>
             </div>
           </article>
 
           <!-- Post 3 -->
-          <article class="flex flex-col bg-slate-50 dark:bg-slate-950 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all border border-slate-100 dark:border-slate-900 group">
+          <article
+            class="flex flex-col bg-slate-50 dark:bg-slate-950 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all border border-slate-100 dark:border-slate-900 group">
             <div class="h-48 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=600" 
-                   alt="Healthy baby allergy relief" 
-                   class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300">
+              <img src="https://images.pexels.com/photos/889996/pexels-photo-889996.jpeg"
+                alt="Clean air duct interior representing respiratory health"
+                class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300">
             </div>
             <div class="p-6 flex flex-col flex-grow text-left ltr:text-left rtl:text-right">
-              <div class="flex items-center space-x-2.5 rtl:space-x-reverse text-xs font-semibold text-emerald-500 mb-3">
+              <div
+                class="flex items-center space-x-2.5 rtl:space-x-reverse text-xs font-semibold text-emerald-500 mb-3">
                 <span>ALLERGEN DEFENSE</span>
-                <span>•</span>
+                <span>â€¢</span>
                 <span>6 Min Read</span>
               </div>
-              <h3 class="font-bold text-slate-900 dark:text-white text-lg mb-2 group-hover:text-brand-primary transition-colors">
+              <h3
+                class="font-bold text-slate-900 dark:text-white text-lg mb-2 group-hover:text-brand-primary transition-colors">
                 The Link Between Dirty HVAC Vents & Asthma Flaring
               </h3>
-              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed flex-grow mb-6">
-                Indoor air recirculates spores and dander. Airway specialists explain how duct sanitation mitigates respiratory triggers.
+              <p
+                class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed flex-grow mb-6">
+                Indoor air recirculates spores and dander. Airway specialists explain how duct sanitation mitigates
+                respiratory triggers.
               </p>
-              <a href="#" class="inline-flex items-center text-xs font-bold text-brand-primary uppercase tracking-wider group-hover:text-brand-primaryHover">
+              <a href="#"
+                class="inline-flex items-center text-xs font-bold text-brand-primary uppercase tracking-wider group-hover:text-brand-primaryHover">
                 <span>Read Article</span>
-                <i data-lucide="arrow-right" class="w-4 h-4 ml-1 group-hover/link:translate-x-1 rtl:group-hover/link:-translate-x-1 transition-transform rtl:rotate-180 rtl:mr-1 rtl:ml-0"></i>
+                <i data-lucide="arrow-right"
+                  class="w-4 h-4 ml-1 group-hover/link:translate-x-1 rtl:group-hover/link:-translate-x-1 transition-transform rtl:rotate-180 rtl:mr-1 rtl:ml-0"></i>
               </a>
             </div>
           </article>
@@ -243,31 +301,40 @@
     <!-- 3. Indoor Air Quality Tips Section -->
     <section class="py-16 bg-slate-50 dark:bg-slate-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <!-- Text -->
           <div class="lg:col-span-7 space-y-6 text-left ltr:text-left rtl:text-right">
             <span class="text-brand-secondary font-semibold uppercase tracking-wider text-sm">Proactive Routines</span>
-            <h2 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-900 dark:text-white">Quick Healthy Air Tips for Households</h2>
+            <h2 class="text-2xl sm:text-3xl font-bold font-outfit text-slate-900 dark:text-white">Quick Healthy Air Tips
+              for Households</h2>
             <p class="text-sm text-slate-600 dark:text-slate-300 font-normal leading-relaxed">
-              Duct cleaning is a major step, but routine household habits secure clinical-grade hygiene levels month after month.
+              Duct cleaning is a major step, but routine household habits secure clinical-grade hygiene levels month
+              after month.
             </p>
-            
+
             <ul class="space-y-3.5 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300">
               <li class="flex items-start space-x-3.5 rtl:space-x-reverse">
-                <span class="mt-0.5 w-5 h-5 rounded-full bg-sky-100 dark:bg-sky-950 text-brand-primary flex items-center justify-center text-xs font-bold flex-shrink-0">1</span>
-                <span>Change system return filters every 60–90 days using high-quality MERV-11 or MERV-13 filters.</span>
+                <span
+                  class="mt-0.5 w-5 h-5 rounded-full bg-sky-100 dark:bg-sky-950 text-brand-primary flex items-center justify-center text-xs font-bold flex-shrink-0">1</span>
+                <span>Change system return filters every 60â€“90 days using high-quality MERV-11 or MERV-13
+                  filters.</span>
               </li>
               <li class="flex items-start space-x-3.5 rtl:space-x-reverse">
-                <span class="mt-0.5 w-5 h-5 rounded-full bg-sky-100 dark:bg-sky-950 text-brand-primary flex items-center justify-center text-xs font-bold flex-shrink-0">2</span>
-                <span>Maintain indoor home relative humidity between 35% and 50% to prevent micro-mold spores in plenums.</span>
+                <span
+                  class="mt-0.5 w-5 h-5 rounded-full bg-sky-100 dark:bg-sky-950 text-brand-primary flex items-center justify-center text-xs font-bold flex-shrink-0">2</span>
+                <span>Maintain indoor home relative humidity between 35% and 50% to prevent micro-mold spores in
+                  plenums.</span>
               </li>
               <li class="flex items-start space-x-3.5 rtl:space-x-reverse">
-                <span class="mt-0.5 w-5 h-5 rounded-full bg-sky-100 dark:bg-sky-950 text-brand-primary flex items-center justify-center text-xs font-bold flex-shrink-0">3</span>
-                <span>Ensure bathrooms and kitchen stove extractors route fully to the outdoors, avoiding ceiling attic dumps.</span>
+                <span
+                  class="mt-0.5 w-5 h-5 rounded-full bg-sky-100 dark:bg-sky-950 text-brand-primary flex items-center justify-center text-xs font-bold flex-shrink-0">3</span>
+                <span>Ensure bathrooms and kitchen stove extractors route fully to the outdoors, avoiding ceiling attic
+                  dumps.</span>
               </li>
               <li class="flex items-start space-x-3.5 rtl:space-x-reverse">
-                <span class="mt-0.5 w-5 h-5 rounded-full bg-sky-100 dark:bg-sky-950 text-brand-primary flex items-center justify-center text-xs font-bold flex-shrink-0">4</span>
+                <span
+                  class="mt-0.5 w-5 h-5 rounded-full bg-sky-100 dark:bg-sky-950 text-brand-primary flex items-center justify-center text-xs font-bold flex-shrink-0">4</span>
                 <span>Keep ventilation register covers dusted to prevent particles from settling on registers.</span>
               </li>
             </ul>
@@ -275,15 +342,19 @@
 
           <!-- Image/Stat -->
           <div class="lg:col-span-5 relative">
-            <div class="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-brand-secondary to-brand-primary opacity-10 blur-xl dark:opacity-20"></div>
+            <div
+              class="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-brand-secondary to-brand-primary opacity-10 blur-xl dark:opacity-20">
+            </div>
             <div class="relative glass-card p-8 rounded-3xl shadow-xl text-center space-y-4">
-              <div class="w-16 h-16 rounded-2xl bg-teal-50 dark:bg-teal-950/30 text-brand-secondary flex items-center justify-center mx-auto shadow-sm">
+              <div
+                class="w-16 h-16 rounded-2xl bg-teal-50 dark:bg-teal-950/30 text-brand-secondary flex items-center justify-center mx-auto shadow-sm">
                 <i data-lucide="badge-percent" class="w-8 h-8"></i>
               </div>
               <p class="text-4xl font-extrabold text-slate-900 dark:text-white font-outfit">80%</p>
               <h3 class="font-bold text-slate-900 dark:text-white text-base">Asthma Symptom Reduction</h3>
               <p class="text-xs text-slate-400 font-normal leading-relaxed">
-                Reported by client households containing children after completing negative pressure HEPA-filtered trunk sanitation procedures.
+                Reported by client households containing children after completing negative pressure HEPA-filtered trunk
+                sanitation procedures.
               </p>
             </div>
           </div>
@@ -295,34 +366,41 @@
     <!-- 4. HVAC Maintenance Insights Section -->
     <section class="py-16 bg-white dark:bg-slate-900">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <span class="text-brand-primary font-semibold uppercase tracking-wider text-sm font-outfit">Technical Analysis</span>
-          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">Why Blower Wheel Dust Destroys Motors</h2>
+          <span class="text-brand-primary font-semibold uppercase tracking-wider text-sm font-outfit">Technical
+            Analysis</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">Why Blower Wheel Dust Destroys
+            Motors</h2>
           <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm font-normal">
             Understand the physical mechanics behind system stress and vent dust blockages.
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          
+
           <div class="space-y-4 text-left rtl:text-right">
             <h3 class="font-bold text-slate-900 dark:text-white text-lg">The Physics of Fan Resistance</h3>
             <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
-              When a blower wheel collects a layer of dust as thin as 1/16th of an inch, the aerodynamic balance of the blades is compromised. The motor must draw more amperage to maintain the target rotation speeds, generating excessive heat.
+              When a blower wheel collects a layer of dust as thin as 1/16th of an inch, the aerodynamic balance of the
+              blades is compromised. The motor must draw more amperage to maintain the target rotation speeds,
+              generating excessive heat.
             </p>
             <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
-              This thermal load weakens internal motor windings, eventually leading to permanent electrical failure. Sanitising blower wheels during central duct cleanings extends system lifespan.
+              This thermal load weakens internal motor windings, eventually leading to permanent electrical failure.
+              Sanitising blower wheels during central duct cleanings extends system lifespan.
             </p>
           </div>
 
           <div class="space-y-4 text-left rtl:text-right">
             <h3 class="font-bold text-slate-900 dark:text-white text-lg">Dryer Vent Lint Fire Dangers</h3>
             <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
-              Laundry dryers exhaust hot, humid air carrying tiny clothing fibers. When exhaust pipes are long or contain bends, this wet lint sticks to the metal pipe interior, drying into highly flammable blockages.
+              Laundry dryers exhaust hot, humid air carrying tiny clothing fibers. When exhaust pipes are long or
+              contain bends, this wet lint sticks to the metal pipe interior, drying into highly flammable blockages.
             </p>
             <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-normal leading-relaxed">
-              Over 15,000 household fires are sparked annually by lint traps. Booking bi-annual sweeps is critical to secure mechanical peace of mind.
+              Over 15,000 household fires are sparked annually by lint traps. Booking bi-annual sweeps is critical to
+              secure mechanical peace of mind.
             </p>
           </div>
 
@@ -337,11 +415,12 @@
   <footer class="bg-slate-900 text-slate-400 border-t border-slate-800 py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 mb-12">
-        
+
         <!-- Brand Info -->
         <div class="md:col-span-2 lg:col-span-4 space-y-4 text-left rtl:text-right">
           <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse">
-            <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-secondary flex items-center justify-center text-white">
+            <div
+              class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-primary to-brand-secondary flex items-center justify-center text-white">
               <i data-lucide="wind" class="w-5 h-5"></i>
             </div>
             <span class="font-outfit text-xl font-bold tracking-tight text-white">
@@ -349,14 +428,18 @@
             </span>
           </a>
           <p class="text-sm text-slate-400 leading-relaxed font-normal">
-            Certified residential and commercial air duct restoration specialists. Committed to improving your health and comfort through superior indoor air hygiene standards.
+            Certified residential and commercial air duct restoration specialists. Committed to improving your health
+            and comfort through superior indoor air hygiene standards.
           </p>
-          
+
           <!-- Trust Certifications -->
           <div class="flex items-center space-x-3 rtl:space-x-reverse pt-2">
-            <div class="px-2 py-1 rounded bg-slate-800 text-[10px] text-slate-200 font-bold border border-slate-700">NADCA MEMBER</div>
-            <div class="px-2 py-1 rounded bg-slate-800 text-[10px] text-slate-200 font-bold border border-slate-700">EPA REGISTERED</div>
-            <div class="px-2 py-1 rounded bg-slate-800 text-[10px] text-slate-200 font-bold border border-slate-700">IAQA MEMBER</div>
+            <div class="px-2 py-1 rounded bg-slate-800 text-[10px] text-slate-200 font-bold border border-slate-700">
+              NADCA MEMBER</div>
+            <div class="px-2 py-1 rounded bg-slate-800 text-[10px] text-slate-200 font-bold border border-slate-700">EPA
+              REGISTERED</div>
+            <div class="px-2 py-1 rounded bg-slate-800 text-[10px] text-slate-200 font-bold border border-slate-700">
+              IAQA MEMBER</div>
           </div>
         </div>
 
@@ -401,17 +484,41 @@
           </ul>
           <!-- Social Icons -->
           <div class="flex items-center space-x-3 rtl:space-x-reverse pt-2">
-            <a href="#" class="w-9 h-9 flex items-center justify-center bg-slate-800 rounded-xl text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300" aria-label="Facebook">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            <a href="#"
+              class="w-9 h-9 flex items-center justify-center bg-slate-800 rounded-xl text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300"
+              aria-label="Facebook">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
             </a>
-            <a href="#" class="w-9 h-9 flex items-center justify-center bg-slate-800 rounded-xl text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300" aria-label="X (formerly Twitter)">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            <a href="#"
+              class="w-9 h-9 flex items-center justify-center bg-slate-800 rounded-xl text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300"
+              aria-label="X (formerly Twitter)">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
             </a>
-            <a href="#" class="w-9 h-9 flex items-center justify-center bg-slate-800 rounded-xl text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300" aria-label="LinkedIn">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <a href="#"
+              class="w-9 h-9 flex items-center justify-center bg-slate-800 rounded-xl text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300"
+              aria-label="LinkedIn">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
             </a>
-            <a href="#" class="w-9 h-9 flex items-center justify-center bg-slate-800 rounded-xl text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300" aria-label="Instagram">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            <a href="#"
+              class="w-9 h-9 flex items-center justify-center bg-slate-800 rounded-xl text-slate-300 hover:bg-brand-primary hover:text-white transition-all duration-300"
+              aria-label="Instagram">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
             </a>
           </div>
         </div>
@@ -419,7 +526,8 @@
       </div>
 
       <!-- Copyright row -->
-      <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm font-medium">
+      <div
+        class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm font-medium">
         <p>&copy; 2026 AeroPure Hygiene Services. All rights reserved.</p>
         <div class="flex items-center space-x-4 rtl:space-x-reverse mt-4 sm:mt-0">
           <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
@@ -432,4 +540,5 @@
   <!-- ================= SCRIPTS ================= -->
   <script src="main.js"></script>
 </body>
+
 </html>

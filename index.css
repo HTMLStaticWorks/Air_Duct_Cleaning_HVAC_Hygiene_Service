@@ -9,9 +9,19 @@
     font-family: 'Inter', sans-serif;
   }
   
-  h1, h2, h3, h4, h5, h6 {
+  h1 {
     font-family: 'Outfit', sans-serif;
-    font-weight: 600; /* As requested, maintain heading font weight at 600 */
+    font-weight: 700 !important; /* Reduced to Bold */
+  }
+  
+  h2, h3 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600 !important; /* Reduced to Semibold */
+  }
+
+  h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500 !important; /* Reduced to Medium */
   }
 
   body {
